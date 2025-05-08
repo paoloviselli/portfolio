@@ -1,13 +1,13 @@
-import { HackathonCard } from "@/components/hackathon-card";
-import BlurFade from "@/components/magicui/blur-fade";
-import BlurFadeText from "@/components/magicui/blur-fade-text";
-import { ProjectCard } from "@/components/project-card";
-import { ResumeCard } from "@/components/resume-card";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Badge } from "@/components/ui/badge";
-import { DATA } from "@/data/resume";
-import Link from "next/link";
-import Markdown from "react-markdown";
+import { HackathonCard } from '@/components/hackathon-card';
+import BlurFade from '@/components/magicui/blur-fade';
+import BlurFadeText from '@/components/magicui/blur-fade-text';
+import { ProjectCard } from '@/components/project-card';
+import { ResumeCard } from '@/components/resume-card';
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { Badge } from '@/components/ui/badge';
+import { DATA } from '@/data/resume';
+import Link from 'next/link';
+import Markdown from 'react-markdown';
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -20,12 +20,12 @@ export default function Page() {
             <div className="flex-col flex flex-1 space-y-1.5">
               <BlurFadeText
                 delay={BLUR_FADE_DELAY}
-                className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
+                className="text-2xl font-bold tracking-tighter sm:text-4xl xl:text-5xl/none"
                 yOffset={8}
-                text={`Hi, I'm ${DATA.name.split(" ")[0]} 👋`}
+                text={`Hi, I'm ${DATA.name.split(' ')[0]}`}
               />
               <BlurFadeText
-                className="max-w-[600px] md:text-xl"
+                className="max-w-[600px] md:text-lg"
                 delay={BLUR_FADE_DELAY}
                 text={DATA.description}
               />
@@ -67,7 +67,7 @@ export default function Page() {
                 subtitle={work.title}
                 href={work.href}
                 badges={work.badges}
-                period={`${work.start} - ${work.end ?? "Present"}`}
+                period={`${work.start} - ${work.end ?? 'Present'}`}
                 description={work.description}
               />
             </BlurFade>
@@ -152,7 +152,7 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section id="hackathons">
+      {/* <section id="hackathons">
         <div className="space-y-12 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 13}>
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
@@ -164,7 +164,7 @@ export default function Page() {
                   I like building things
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  During my time in university, I attended{" "}
+                  During my time in university, I attended{' '}
                   {DATA.hackathons.length}+ hackathons. People from around the
                   country would come together and build incredible things in 2-3
                   days. It was eye-opening to see the endless possibilities
@@ -194,7 +194,7 @@ export default function Page() {
             </ul>
           </BlurFade>
         </div>
-      </section>
+      </section> */}
       <section id="contact">
         <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 16}>
@@ -206,13 +206,13 @@ export default function Page() {
                 Get in Touch
               </h2>
               <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Want to chat? Just shoot me a dm{" "}
+                Want to chat? Just shoot me a dm{' '}
                 <Link
                   href={DATA.contact.social.X.url}
                   className="text-blue-500 hover:underline"
                 >
                   with a direct question on twitter
-                </Link>{" "}
+                </Link>{' '}
                 and I&apos;ll respond whenever I can. I will ignore all
                 soliciting.
               </p>
