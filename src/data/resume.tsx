@@ -8,23 +8,28 @@ export const DATA = {
   location: 'London, UK',
   locationLink: 'https://www.google.com/maps/place/london',
   description:
-    'Software Engineer turned Entrepreneur. I love building things and helping people. Very active on Twitter.',
+    'A Product Engineer and Designer with a passion for tranforming ideas into practical solutions.',
   summary:
-    'Driven by a passion for impactful innovation, I specialize in designing and engineering products that solve real-world challenges.',
+    'I’ve designed and built digital products across multiple industries, from AI tools for shipbrokers, mobile apps for travellers, and SaaS platforms for construction companies. I work across product, design, and code to turn ideas into effective solutions.',
+  summary2: 'Scroll down to see my latest [projects](#projects).',
   avatarUrl: '/me.png',
   skills: [
     'React',
     'Next.js',
     'Typescript',
     'Node.js',
+    'PostgreSQL',
+    'AI SDK',
     'Tailwind CSS',
     'Figma',
-    'Product Prototyping',
     'Product Design',
+    'Prototyping',
     'Product Road-mapping',
-    'Market Analysis',
+    'Market Research',
+    'Business Analysis',
     'A/B Testing',
     'Agile (Scrum, Kanban)',
+    'Project Management',
   ],
   navbar: [
     { href: '/', icon: HomeIcon, label: 'Home' },
@@ -86,11 +91,11 @@ export const DATA = {
         'Co-founded and led development of a travel app for personalized city explorations. Led a cross-functional team of 3, implemented Agile, conducted user research, and secured API integrations that tripled platform capabilities.',
     },
     {
-      company: 'Growy',
+      company: 'Growy (ex. Kool Stories)',
       href: '',
       badges: [],
       location: 'London, UK',
-      title: 'Product Manager & Mobile Developer',
+      title: 'Product Manager & Mobile Developer (Contract)',
       logoUrl: '/growy.png',
       start: 'Apr 2022',
       end: 'Aug 2022',
@@ -144,41 +149,37 @@ export const DATA = {
   projects: [
     {
       title: 'TL;DR Bookmarker',
-      href: 'https://handl.work',
-      dates: 'Apr 2025 - Ongoing',
+      href: '',
+      dates: 'May 2025 - Work in Progress',
       active: true,
       description:
-        'A Chrome extension and mobile app that let you save articles, posts, or videos to watch later, and provide a TLDR; summary of them the next morning.',
+        'A fun-project to practice building with AI. It allows you to save articles, posts, or videos to watch later, and provide a TL;DR; summary of them the next morning.',
       technologies: [
+        'AI SDK',
+        'OpenRouter API',
         'Next.js',
         'Node.js',
-        'AI SDK',
         'Typescript',
         'PostgreSQL',
         'Drizzle ORM',
         'TailwindCSS',
         'Shadcn UI',
-        'OpenRouter API',
       ],
       links: [
-        {
-          type: 'Website',
-          href: 'https://handl.work',
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: 'Figma',
-          href: 'https://github.com/magicuidesign/magicui',
-          icon: <Icons.figma className="size-3" />,
-        },
+        // {
+        //   type: 'Website',
+        //   href: 'https://www.valdagroup.com/en',
+        //   icon: <Icons.globe className="size-3" />,
+        // },
       ],
-      image: '',
-      video: 'https://cdn.magicui.design/bento-grid.mp4',
+      image: '/tldr-image.jpg',
+      video: '',
+      // video: 'https://cdn.llm.report/openai-demo.mp4',
     },
     {
       title: 'Handl Work',
       href: 'https://handl.work',
-      dates: 'Jan 2025 - Apr 2025',
+      dates: 'Jan 2025 - Present',
       active: true,
       description:
         'Designed, developed and launched a SaaS for a construction companies to hire and manage their workforce.',
@@ -199,20 +200,21 @@ export const DATA = {
         },
         {
           type: 'Figma',
-          href: 'https://github.com/magicuidesign/magicui',
+          href: 'https://www.figma.com/design/gU74gaAEHGLZ4iKOVzjkic/Handl?node-id=3-4&t=pPFt4YKBZmYfEzhY-1',
           icon: <Icons.figma className="size-3" />,
         },
       ],
-      image: '',
-      video: 'https://cdn.magicui.design/bento-grid.mp4',
+      image: '/handl-hero.jpg',
+      video: '',
+      // video: 'https://cdn.magicui.design/bento-grid.mp4',
     },
     {
       title: 'Discovertsy',
-      href: 'https://chatcollect.com',
-      dates: 'Jan 2024 - Feb 2024',
+      href: 'https://discovertsy.com',
+      dates: 'Dec 2022 - Jan 2024',
       active: true,
       description:
-        'With the release of the [OpenAI GPT Store](https://openai.com/blog/introducing-the-gpt-store), I decided to build a SaaS which allows users to collect email addresses from their GPT users. This is a great way to build an audience and monetize your GPT API usage.',
+        'Designed and developed a travel app for personalized city explorations, using AI to generate personalized itineraries and recommendations.',
       technologies: [
         'Next.js',
         'Expo',
@@ -220,6 +222,7 @@ export const DATA = {
         'Firebase',
         'TailwindCSS',
         'Stripe',
+        'OpenAI API',
       ],
       links: [
         {
@@ -233,13 +236,13 @@ export const DATA = {
           icon: <Icons.figma className="size-3" />,
         },
       ],
-      image: '',
-      video:
-        'https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4',
+      image: '/discovertsy-hero.jpg',
+      video: '',
+      // video: 'https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4',
     },
     {
       title: 'Valda',
-      href: 'https://llm.report',
+      href: 'https://www.valdagroup.com/en',
       dates: 'April 2024',
       active: true,
       description:
@@ -258,37 +261,9 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: '',
-      video: 'https://cdn.llm.report/openai-demo.mp4',
-    },
-    {
-      title: 'Appeteat',
-      href: 'https://automatic.chat',
-      dates: 'April 2023 - March 2024',
-      active: true,
-      description:
-        'Developed an AI Customer Support Chatbot which automatically responds to customer support tickets using the latest GPT models.',
-      technologies: [
-        'Next.js',
-        'Typescript',
-        'PostgreSQL',
-        'Prisma',
-        'TailwindCSS',
-        'Shadcn UI',
-        'Magic UI',
-        'Stripe',
-        'Cloudflare Workers',
-      ],
-      links: [
-        {
-          type: 'Website',
-          href: 'https://automatic.chat',
-          icon: <Icons.globe className="size-3" />,
-        },
-      ],
-      image: '',
-      video:
-        'https://pub-83c5db439b40468498f97946200806f7.r2.dev/automatic-chat.mp4',
+      image: '/valda-hero.jpg',
+      video: '',
+      // video: 'https://cdn.llm.report/openai-demo.mp4',
     },
   ],
   // hackathons: [
@@ -314,17 +289,5 @@ export const DATA = {
   //     mlh: 'https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg',
   //     links: [],
   //   },
-  //   {
-  //     title: 'FirstNet Public Safety Hackathon',
-  //     dates: 'March 23rd - 24th, 2018',
-  //     location: 'San Francisco, California',
-  //     description:
-  //       'Developed a mobile application which communcicates a victims medical data from inside an ambulance to doctors at hospital.',
-  //     icon: 'public',
-  //     image:
-  //       'https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/firstnet.png',
-  //     links: [],
-  //   },
-
   // ],
 } as const;
