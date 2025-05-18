@@ -1,13 +1,13 @@
-"use client";
+'use client';
 
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Badge } from "@/components/ui/badge";
-import { Card, CardHeader } from "@/components/ui/card";
-import { cn } from "@/lib/utils";
-import { motion } from "framer-motion";
-import { ChevronRightIcon } from "lucide-react";
-import Link from "next/link";
-import React from "react";
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { Badge } from '@/components/ui/badge';
+import { Card, CardHeader } from '@/components/ui/card';
+import { cn } from '@/lib/utils';
+import { motion } from 'framer-motion';
+import { ChevronDownIcon, ChevronRightIcon } from 'lucide-react';
+import Link from 'next/link';
+import React from 'react';
 
 interface ResumeCardProps {
   logoUrl: string;
@@ -40,7 +40,7 @@ export const ResumeCard = ({
 
   return (
     <Link
-      href={href || "#"}
+      href={href || '#'}
       className="block cursor-pointer"
       onClick={handleClick}
     >
@@ -73,10 +73,13 @@ export const ResumeCard = ({
                     ))}
                   </span>
                 )}
-                <ChevronRightIcon
+                {/* <span className="ml-4 text-xs text-muted-foreground font-medium translate-x-0 transition-all duration-200 ease-out group-hover:translate-x-1 group-hover:text-primary group-hover:font-semibold">
+                  Read More
+                </span> */}
+                <ChevronDownIcon
                   className={cn(
-                    "size-4 translate-x-0 transform opacity-0 transition-all duration-300 ease-out group-hover:translate-x-1 group-hover:opacity-100",
-                    isExpanded ? "rotate-90" : "rotate-0"
+                    'size-4 ml-1 translate-x-0 transform opacity-50 transition-all duration-200 ease-out group-hover:translate-x-1 group-hover:opacity-100',
+                    isExpanded ? 'rotate-180' : 'rotate-0'
                   )}
                 />
               </h3>
@@ -92,13 +95,13 @@ export const ResumeCard = ({
               animate={{
                 opacity: isExpanded ? 1 : 0,
 
-                height: isExpanded ? "auto" : 0,
+                height: isExpanded ? 'auto' : 0,
               }}
               transition={{
                 duration: 0.7,
                 ease: [0.16, 1, 0.3, 1],
               }}
-              className="mt-2 text-xs sm:text-sm"
+              className="my-2 text-xs sm:text-sm text-muted-foreground"
             >
               {description}
             </motion.div>

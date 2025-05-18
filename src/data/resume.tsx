@@ -246,7 +246,7 @@ export const DATA = {
       dates: 'April 2024',
       active: true,
       description:
-        'Designed and Developed a website for a large manufacturing company in Bulgaria.',
+        'Designed and developed a website for a large manufacturing company in Bulgaria.',
       technologies: [
         'Next.js',
         'Typescript',
