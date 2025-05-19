@@ -119,7 +119,7 @@ export const DATA = {
     {
       school: 'University of Westminster | Westminster Business School',
       href: '',
-      degree: 'BSc (Hons) Business Economics',
+      degree: 'BSc (Hons) Business Economics | First Class Honours',
       logoUrl: '/uow.png',
       start: 'Sep 2018',
       end: 'Jul 2021',
