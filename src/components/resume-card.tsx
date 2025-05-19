@@ -76,12 +76,14 @@ export const ResumeCard = ({
                 {/* <span className="ml-4 text-xs text-muted-foreground font-medium translate-x-0 transition-all duration-200 ease-out group-hover:translate-x-1 group-hover:text-primary group-hover:font-semibold">
                   Read More
                 </span> */}
-                <ChevronDownIcon
-                  className={cn(
-                    'size-4 ml-1 translate-x-0 transform opacity-50 transition-all duration-200 ease-out group-hover:translate-x-1 group-hover:opacity-100',
-                    isExpanded ? 'rotate-180' : 'rotate-0'
-                  )}
-                />
+                {href === '' && (
+                  <ChevronDownIcon
+                    className={cn(
+                      'size-4 ml-1 translate-x-0 transform opacity-50 transition-all duration-200 ease-out group-hover:translate-x-1 group-hover:opacity-100',
+                      isExpanded ? 'rotate-180' : 'rotate-0'
+                    )}
+                  />
+                )}
               </h3>
               <div className="text-xs sm:text-sm tabular-nums text-muted-foreground text-right">
                 {period}
