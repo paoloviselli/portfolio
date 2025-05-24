@@ -166,11 +166,11 @@ export const DATA = {
         'Shadcn UI',
       ],
       links: [
-        // {
-        //   type: 'Website',
-        //   href: 'https://www.valdagroup.com/en',
-        //   icon: <Icons.globe className="size-3" />,
-        // },
+        {
+          type: 'GitHub',
+          href: 'https://github.com/paoloviselli/tldr-ai',
+          icon: <Icons.github className="size-3" />,
+        },
       ],
       image: '/tldr-image.jpg',
       video: '',
