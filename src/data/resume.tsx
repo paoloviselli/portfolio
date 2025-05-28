@@ -1,5 +1,7 @@
 import { Icons } from '@/components/icons';
 import { HomeIcon, NotebookIcon } from 'lucide-react';
+import Link from 'next/link';
+import React from 'react';
 
 export const DATA = {
   name: 'Paolo Viselli',
@@ -8,28 +10,19 @@ export const DATA = {
   location: 'London, UK',
   locationLink: 'https://www.google.com/maps/place/london',
   description:
-    'A Product Engineer and Designer with a passion for tranforming ideas into practical solutions.',
+    "I'm a Product Engineer and Designer with a passion for tranforming ideas into practical solutions. Currently at <a href='https://affinityship.com' class='underline underline-offset-2 hover:text-blue-500'>Affinity Shipping LLP</a>, building cool AI tools for shipbrokers.",
   summary:
     'I’ve designed and built digital products across multiple industries, from AI tools for shipbrokers, mobile apps for travellers, and SaaS platforms for construction companies. I work across product, design, and code to turn ideas into effective solutions.',
   summary2: 'Scroll down to see my latest [projects](#projects).',
   avatarUrl: '/me.png',
   skills: [
-    'React',
-    'Next.js',
-    'Typescript',
-    'Node.js',
-    'PostgreSQL',
-    'AI SDK',
-    'Tailwind CSS',
-    'Figma',
     'Product Design',
     'Prototyping',
     'Product Road-mapping',
     'Market Research',
     'Business Analysis',
-    'A/B Testing',
-    'Agile (Scrum, Kanban)',
     'Project Management',
+    'Front End Development',
   ],
   navbar: [
     { href: '/', icon: HomeIcon, label: 'Home' },
