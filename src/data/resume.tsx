@@ -143,7 +143,7 @@ export const DATA = {
     {
       title: 'TL;DR Bookmarker',
       href: '',
-      dates: 'May 2025 - Work in Progress',
+      dates: 'Jun 2025 - Work in Progress',
       active: true,
       description:
         'A fun-project to practice building with AI. It allows you to save articles, posts, or videos to watch later, and provide a TL;DR; summary of them the next morning.',
@@ -169,10 +169,11 @@ export const DATA = {
       video: '',
       // video: 'https://cdn.llm.report/openai-demo.mp4',
     },
+
     {
       title: 'Handl Work',
       href: 'https://handl.work',
-      dates: 'Jan 2025 - Present',
+      dates: 'Jan 2025 - Jun 2025',
       active: true,
       description:
         'Designed, developed and launched a SaaS for a construction companies to hire and manage their workforce.',
@@ -200,6 +201,58 @@ export const DATA = {
       image: '/handl-hero.jpg',
       video: '',
       // video: 'https://cdn.magicui.design/bento-grid.mp4',
+    },
+    {
+      title: 'Smart Salon',
+      href: 'https://www.smartsalon.app/',
+      dates: 'Nov 2024 - Jan 2025',
+      active: true,
+      description:
+        'A side project built to help barbers manage bookings and payments, now used by 15+ barbers in Italy. Designed, developed, and iterated based on real user feedback.',
+      technologies: [
+        'Next.js',
+        'Typescript',
+        'Stripe',
+        'PostgreSQL',
+        'Drizzle ORM',
+        'TailwindCSS',
+        'Shadcn UI',
+      ],
+      links: [
+        {
+          type: 'Website',
+          href: 'https://www.smartsalon.app/',
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: '/smart-salon.png',
+      video: '',
+      // video: 'https://cdn.llm.report/openai-demo.mp4',
+    },
+    {
+      title: 'Valda',
+      href: 'https://www.valdagroup.com/en',
+      dates: 'April 2024',
+      active: true,
+      description:
+        'Designed and developed a website for a large manufacturing company in Bulgaria.',
+      technologies: [
+        'Next.js',
+        'Typescript',
+        'Sanity CMS',
+        'Chackra UI',
+        'Next Intl',
+      ],
+      links: [
+        {
+          type: 'Website',
+          href: 'https://www.valdagroup.com/en',
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: '/valda-hero.jpg',
+      video: '',
+      // video: 'https://cdn.llm.report/openai-demo.mp4',
     },
     {
       title: 'Discovertsy',
@@ -232,31 +285,6 @@ export const DATA = {
       image: '/discovertsy-hero.jpg',
       video: '',
       // video: 'https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4',
-    },
-    {
-      title: 'Valda',
-      href: 'https://www.valdagroup.com/en',
-      dates: 'April 2024',
-      active: true,
-      description:
-        'Designed and developed a website for a large manufacturing company in Bulgaria.',
-      technologies: [
-        'Next.js',
-        'Typescript',
-        'Sanity CMS',
-        'Chackra UI',
-        'Next Intl',
-      ],
-      links: [
-        {
-          type: 'Website',
-          href: 'https://www.valdagroup.com/en',
-          icon: <Icons.globe className="size-3" />,
-        },
-      ],
-      image: '/valda-hero.jpg',
-      video: '',
-      // video: 'https://cdn.llm.report/openai-demo.mp4',
     },
   ],
   // hackathons: [
